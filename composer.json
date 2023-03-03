@@ -1,0 +1,44 @@
+{
+  "name": "peibin/laravel-event",
+  "description": "Peibin event component for Laravel.",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "laravel",
+    "swoole"
+  ],
+  "authors": [
+    {
+      "name": "Peibin Zhu",
+      "email": "zhupeibin1207@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "illuminate/contracts": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PeibinLaravel\\Event\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PeibinLaravelTest\\Event\\": "tests/"
+    }
+  },
+  "suggest": {
+    "peibin/laravel-di": "Required to use annotations."
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PeibinLaravel\\Event\\EventServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
