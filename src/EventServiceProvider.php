@@ -4,18 +4,20 @@ declare(strict_types=1);
 
 namespace PeibinLaravel\Event;
 
-use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Console\Events\ArtisanStarting;
+use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Support\ServiceProvider;
-use PeibinLaravel\SwooleEvent\Events\BootApplication;
+use Laravel\Octane\Events\MainServerStarting;
 
 class EventServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->app->singleton(ListenerProvider::class);
-        $this->app->get(ListenerProvider::class);
-
-        $this->app->get(Dispatcher::class)->listen(BootApplication::class, function () {
+        $events = [
+            ArtisanStarting::class,
+            MainServerStarting::class,
+        ];
+        $this->app->get(DispatcherContract::class)->listen($events, function () {
             $this->app->get(ListenerProviderFactory::class)();
         });
     }

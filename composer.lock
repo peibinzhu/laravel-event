@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c6c19a49b5fc4ab4577cfdcfc0f4f42",
+    "content-hash": "e1b7c55f9ec9647f5842cdcdc4867570",
     "packages": [
         {
             "name": "brick/math",
@@ -1873,6 +1873,117 @@
                 "source": "https://github.com/peibinzhu/laravel-coordinator/tree/v1.0.0"
             },
             "time": "2022-09-20T10:48:23+00:00"
+        },
+        {
+            "name": "peibin/laravel-di",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peibinzhu/laravel-di.git",
+                "reference": "06577f3ceca247beb0cb849d5791d3a947128510"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peibinzhu/laravel-di/zipball/06577f3ceca247beb0cb849d5791d3a947128510",
+                "reference": "06577f3ceca247beb0cb849d5791d3a947128510",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.2",
+                "nikic/php-parser": "^4.1",
+                "peibin/laravel-provider-config": "^1.0",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PeibinLaravel\\Di\\DiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PeibinLaravel\\Di\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peibin Zhu",
+                    "email": "zhupeibin1207@gmail.com"
+                }
+            ],
+            "description": "Peibin di component for Laravel.",
+            "keywords": [
+                "annotation",
+                "laravel",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/peibinzhu/laravel-di/issues",
+                "source": "https://github.com/peibinzhu/laravel-di/tree/v1.6.0"
+            },
+            "time": "2023-03-06T04:12:53+00:00"
+        },
+        {
+            "name": "peibin/laravel-provider-config",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peibinzhu/laravel-provider-config.git",
+                "reference": "1813ae0e14c9a56bcee6c6e4ee5025571c1ae522"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peibinzhu/laravel-provider-config/zipball/1813ae0e14c9a56bcee6c6e4ee5025571c1ae522",
+                "reference": "1813ae0e14c9a56bcee6c6e4ee5025571c1ae522",
+                "shasum": ""
+            },
+            "require": {
+                "peibin/laravel-utils": "^1.9",
+                "php": ">=8.0"
+            },
+            "suggest": {
+                "peibin/laravel-di": "Required to use annotations."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PeibinLaravel\\ProviderConfig\\ConfigServicProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PeibinLaravel\\ProviderConfig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peibin Zhu",
+                    "email": "zhupeibin1207@gmail.com"
+                }
+            ],
+            "description": "Peibin provider config component for Laravel.",
+            "keywords": [
+                "laravel",
+                "php",
+                "swoole"
+            ],
+            "support": {
+                "issues": "https://github.com/peibinzhu/laravel-provider-config/issues",
+                "source": "https://github.com/peibinzhu/laravel-provider-config/tree/v1.0.1"
+            },
+            "time": "2023-03-06T02:41:11+00:00"
         },
         {
             "name": "peibin/laravel-swoole-event",
