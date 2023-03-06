@@ -15,9 +15,7 @@
   ],
   "require": {
     "php": ">=8.0",
-    "illuminate/contracts": "^9.0",
-    "peibin/laravel-di": "^1.6",
-    "peibin/laravel-swoole-event": "^1.1"
+    "illuminate/contracts": "^9.0"
   },
   "autoload": {
     "psr-4": {
